@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>PANARAY</title>
+	<link rel="stylesheet" href="css/css.css">
+</head>
+<body >
+	
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1><img src="img/logo1.png" width="100px" height="100px"></h1>
+			</div>
+			
+				<nav class="carr">
+				<a href="Carrito.html" ><img src="img/carrito.png" width="45px" height="45px"></img></a>
+			</nav>
+		</div>
+	</header>
+	<div class="capa"></div>
+<!--	--------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="Index.html">Inicio</a>
+			<a href="iniciarsesion.html">Iniciar sesion</a>
+			<a href="Ventas.html">Ventas</a>
+			<a href="Contactanos.html">Contactanos</a>
+	
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+<p class="Tit">PANARAY</p>
+<br>
+<hr>
+<div class="RecCa"></div>
+<div  class="MCar">
+<ul>
+	<ol class="TxtCar">Concha</ol><br><br><br><br><br><br>
+	<ol class="TxtCar">Dona</ol><br><br><br><br><br><br>
+	<ol class="TxtCar">Cortadillo</ol>
+   </ul>
+</div>
+<div class="wrapC">
+	<button class="buttonCar" id="boton">+</button>
+	<button class="buttonCar" id="botonR">-</button>
+  <input  class="PCar" type="text"  disabled=»disabled»  id="mostrador"  > </div>
+  <div class="wrapC1">
+	<button class="buttonCar1" id="boton1">+</button>
+	<button class="buttonCar1" id="botonR1">-</button>
+  <input  class="PCar1" type="text"  disabled=»disabled»  id="mostrador1"  > </div>
+  <div class="wrapC2">
+	<button class="buttonCar2" id="boton2">+</button>
+	<button class="buttonCar2" id="botonR2">-</button>
+  <input  class="PCar2" type="text"  disabled=»disabled»  id="mostrador2"  > </div>
+  <script>
+
+	//Contador
+	
+	let numeroS = 0;
+boton.onclick = () =>  {
+ numeroS++;
+ mostrador.value = numeroS ;
+}
+
+ let numeroR = numeroS
+ botonR.onclick = () => {
+	numeroS--;
+
+	mostrador.value = numeroS	;
+
+}  
+</script>
+<script>
+let numeroS1 = 0;
+boton1.onclick = () =>  {
+ numeroS1++;
+ mostrador1.value = numeroS1 ;
+}
+
+ let numeroR1 = numeroS1
+ botonR1.onclick = () => {
+	numeroS1--;
+
+	mostrador1.value = numeroS1	;
+
+}
+</script>
+<script>
+	let numeroS2 = 0;
+	boton2.onclick = () =>  {
+	 numeroS2++;
+	 mostrador2.value = numeroS2 ;
+	}
+	
+	 let numeroR2 = numeroS2
+	 botonR2.onclick = () => {
+		numeroS2--;
+	
+		mostrador2.value = numeroS2	;
+	
+	}
+	</script>
+
+<div class="wrapCa">
+	<button class="buttonCa">Comprar</button>
+  </div>
+  <svg class="VentCa" version="1.1" xmlns="http://www.w3.org/2000/svg"
+  width="120" height="100" viewBox="0 0 120 100">
+<rect  x="10" y="10" width="100" height="80" rx="20" ry="20"
+	 fill="green" />
+	<h1 class="txtCar1">Total:<BR>$45</h1>
+	</svg>
+</svg>
+</body>
+</html>

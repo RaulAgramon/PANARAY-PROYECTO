@@ -1,0 +1,865 @@
+@media screen and (max-width: 980px){
+    #contenedor{
+        width: 90%;
+    }
+    #contenido{
+        width: 60%;
+    }
+    #barra_lateral{
+        width:30%;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+body{
+    
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+.capa{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+    top: 0;left: 0;
+}
+/*Estilos para el encabezado*/
+.header{
+    position:absolute;
+    right: 100px;
+    width: 100%;
+    height: 100px;
+  
+    
+}
+.container{
+    width: 90%;
+    max-width: 1920px;
+    margin: auto;
+}
+.container .btn-menu, .logo{
+    float: left;
+    line-height:100px;
+}
+.container .btn-menu label{
+    
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+.logo h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.container .menu{
+    float: right;
+    line-height: 100px;
+}
+.container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.container .menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+.btn-menu {
+  padding-left: 60px;
+}
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+.carr{
+  
+    transform: translate(200px, 30px);
+}
+/*Fin de Menù lateral*/
+
+
+/*Fin de Menù lateral*/
+.carr{
+
+    transform: translate(   1590px, 30px);
+}
+.Tit{
+    
+padding-top: 30px;
+padding-left: 800px;
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 54px;
+    
+}
+.TxtI{ 
+    padding-left: 5%;
+    padding-top: 15%;
+
+    font-size: 34px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+hr{
+    width: 1920px;
+    position:absolute;
+    left: 0%;
+}
+.Ig{
+   position: absolute;
+    right: 145px;
+    top: 900px;
+ 
+}
+.IgT{
+    font-size: 25px;
+    position: absolute;
+    right: 6px;
+    top:899px;
+}
+/*Incio de sesion*/
+#login-box {
+    border: 1px ridge rgb(255, 255, 255);
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 12%;
+    background: #00000080;
+    padding: 20px 50px;
+}
+#login-box h1 {
+    color: white;
+}
+#login-box .form .item input {
+    width: 200px; /* Establecer el ancho apropiado */
+    border: 0; /* Primero cancele el borde, para que pueda modificar el ancho del borde inferior debajo */
+    border-bottom: 5px solid white; /* Modificar el límite inferior para mostrar el efecto de línea horizontal */
+    font-size: 18px; /* Aumentar el tamaño de fuente de forma adecuada */
+    background: #ffffff00; /* Establecer el cuadro de entrada en transparente */
+    color: white; /* El color del texto anterior se establece en blanco, pero el color del marcador de posición debe establecerse por separado */
+    padding: 5px 10px; /* Para que el contenido del marcador de posición no se muestre en la cuadrícula superior, aumente el borde interno */
+}
+#login-box .form .item i {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+#login-box button {
+    border: 0; /* Cancelar borde del botón */
+    width: 150px; /* Establecer la longitud y el ancho apropiados del botón */
+    height: 30px;
+    margin-top: 18px; /* Establezca el ancho apropiado del marco exterior superior y aumente la distancia desde el cuadro de contraseña superior */
+    font-size: 18px; /* Modificar el tamaño del texto del botón */
+    color: rgb(0, 0, 0); /* Modificar el color del texto en el botón */
+    border-radius: 25px; /* Establecer los bordes izquierdo y derecho del botón en arcos */
+    background-image: linear-gradient(to right, #ffffff 0%, #505050 100%); /* Agrega un color degradado al botón */
+}
+/*Ventas*/
+/*rec1*/
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .button {
+    right: 450px;
+    top:450px;
+    min-width: 150px;
+    min-height: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #1f8300;
+  background: linear-gradient(90deg, #1f8300 0%, #1f8300 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgb(0, 82, 11);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    z-index: 1;
+    }
+  
+ 
+  
+  .button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+  .Vent{
+ 
+   height: 350px;
+    width: 350px;
+    position:absolute;
+    left: 310px;
+    top: 280px;
+    display: flex; 
+    
+  }
+  /*rec2*/
+  .Vent1{
+ 
+    height: 350px;
+     width: 350px;
+     position:absolute;
+     left: 730px;
+     top: 280px;
+     display: flex; 
+  }
+  .wrap1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .button1 {
+    right: 20px;
+    top: 403px;
+    min-width: 150px;
+    min-height: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #1f8300;
+  background: linear-gradient(90deg, #1f8300 0%, #1f8300 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgb(0, 82, 11);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    z-index: 1;
+    }
+  
+ 
+  
+  .button1:hover, .button1:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+  /*Rec3*/
+  .Vent2{
+ 
+    height: 350px;
+     width: 350px;
+     position:absolute;
+     left: 1160px;
+     top: 280px;
+     display: flex; 
+  }
+  .wrap2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .button2 {
+    right: -410px;
+    top: 359px;
+    min-width: 150px;
+    min-height: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #1f8300;
+  background: linear-gradient(90deg, #1f8300 0%, #1f8300 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgb(0, 82, 11);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    z-index: 1;
+    }
+  
+ 
+  
+  .button2:hover, .button2:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+  /*Imgs Ventas*/
+  /*Pan 1*/
+  .P1{
+    position: absolute;
+    left: 350px;
+    top: 370px;
+  }
+    /*Pan 2*/
+    .P2{
+        position: absolute;
+        left: 799px;
+        top: 370px;
+    }
+    /*Pan 3*/
+    .P3{
+        position: absolute;
+        left: 1229px;
+        top: 370px;
+    }
+    /*Carritooo*/
+    .RecCa{
+        position: absolute;
+        top: 200px;
+      left: 620px;
+  
+        background-color: gray;
+        border-radius: 30px;
+        border: 0px solid ;
+        width: 600px;
+        height: 500px;
+        
+    }
+    /*Texto Carrito*/
+    .TxtCar{
+        font-size: 54px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    ul{
+        position: absolute;
+        left: 680px;
+        top: 230px;
+    }
+    /*Circulos*/
+    /*Circulo Precio Venta*/
+.PCar{
+    position: absolute;
+    left: 1160px;
+    top: 240px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 55px;
+    background-color: transparent; 
+    border: 1px; 
+    border-radius: 0; 
+    color: rgb(0, 0, 0) !important; 
+    height: 60px; 
+    padding-right: 50px 
+}
+.CirCa {
+    position: absolute;
+    left: 590px;
+    top: 500px;
+    width: 60px;
+    height: 60px;
+    -moz-border-radius: 60%;
+    -webkit-border-radius: 60%;
+    border-radius: 60%;
+    background: #1f8300;
+}
+.CirCa1 {
+    position: absolute;
+    left: 1010px;
+    top: 500px;
+    width: 60px;
+    height: 60px;
+    -moz-border-radius: 60%;
+    -webkit-border-radius: 60%;
+    border-radius: 60%;
+    background: #1f8300;
+}
+.CirCa2 {
+    position: absolute;
+    left: 1440px;
+    top: 500px;
+    width: 60px;
+    height: 60px;
+    -moz-border-radius: 60%;
+    -webkit-border-radius: 60%;
+    border-radius: 60%;
+    background: #1f8300;
+}
+.PrecioCa{
+    font-size: 30px;
+    transform: translate(5px, 12px)
+    
+   
+}
+ /*Circulos compra carrito*/
+.wrapC {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .buttonCar {
+    position: absolute;
+    left: 100px;
+    top: 130px;
+    width: 60px;
+    height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #777777;
+  background: linear-gradient(90deg, #777777 0%, #777777 100%);
+  -moz-border-radius: 60%;
+     -webkit-border-radius: 60%;
+  border-radius: 60%;
+  background: #777777;
+    box-shadow: 12px 12px 24px #666666;
+    transition: all 0.5s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    z-index: 1;
+    }
+  
+ 
+  
+  .buttonCar:hover, .buttonCar:focus {
+    color: #ffffff;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+}
+
+/*Botones 1*/
+.wrapC1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .buttonCar1 {
+    position: absolute;
+    left: 100px;
+    top: 230px;
+    width: 60px;
+    height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #777777;
+  background: linear-gradient(90deg, #777777 0%, #777777 100%);
+  -moz-border-radius: 60%;
+     -webkit-border-radius: 60%;
+  border-radius: 60%;
+  background: #777777;
+    box-shadow: 12px 12px 24px #666666;
+    transition: all 0.5s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    z-index: 1;
+    }
+  
+ 
+  
+  .buttonCar1:hover, .buttonCar1:focus {
+    color: #ffffff;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+}
+.PCar1{
+    position: absolute;
+    left: 1160px;
+    top: 390px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 55px;
+    background-color: transparent; 
+    border: 1px; 
+    border-radius: 0; 
+    color: rgb(0, 0, 0) !important; 
+    height: 60px; 
+    padding-right: 50px 
+}
+/*Botones 3*/
+.wrapC2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .buttonCar2 {
+    position: absolute;
+    left: 100px;
+    top: 330px;
+    width: 60px;
+    height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #777777;
+  background: linear-gradient(90deg, #777777 0%, #777777 100%);
+  -moz-border-radius: 60%;
+     -webkit-border-radius: 60%;
+  border-radius: 60%;
+  background: #777777;
+    box-shadow: 12px 12px 24px #666666;
+    transition: all 0.5s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    z-index: 1;
+    }
+  
+ 
+  
+  .buttonCar2:hover, .buttonCar2:focus {
+    color: #ffffff;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+}
+.PCar2{
+    position: absolute;
+    left: 1160px;
+    top: 562px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 55px;
+    background-color: transparent; 
+    border: 1px; 
+    border-radius: 0; 
+    color: rgb(0, 0, 0) !important; 
+    height: 60px; 
+    padding-right: 50px 
+}
+.PCarV{
+    position: absolute;
+    left: px;
+    top: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 55px;
+    background-color: transparent; 
+    border: 1px; 
+    border-radius: 0; 
+    color: rgb(0, 0, 0) !important; 
+    height: 60px; 
+    padding-right: 50px 
+}
+.TxtCarr1{
+position: absolute;
+}
+.TxtCarr{
+    position: absolute;
+    left: 00px;
+    }
+    
+
+/*--------------*/
+    .wrapCa {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+      }
+      
+      .buttonCa {
+        right: 0px;
+        top:450px;
+        min-width: 250px;
+        min-height: 10px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 1.3px;
+        font-weight: 700;
+        color: #313133;
+        background: #1f8300;
+      background: linear-gradient(90deg, #1f8300 0%, #1f8300 100%);
+        border: none;
+        border-radius: 1000px;
+        box-shadow: 12px 12px 24px rgb(0, 82, 11);
+        transition: all 0.3s ease-in-out 0s;
+        cursor: pointer;
+        outline: none;
+        position: relative;
+        padding: 10px;
+        z-index: 1;
+        }
+      
+     
+      
+      .buttonCa:hover, .buttonCa:focus {
+        color: #313133;
+        transform: translateY(-6px);
+      }
+      
+      button:hover::before, button:focus::before {
+        opacity: 1;
+      }
+      
+      
+      
+      button:hover::after, button:focus::after {
+        animation: none;
+        display: none;
+      }
+      
+      @keyframes ring {
+        0% {
+          width: 30px;
+          height: 30px;
+          opacity: 1;
+        }
+        100% {
+          width: 300px;
+          height: 300px;
+          opacity: 0;
+        }
+      }
+      .VentCa{
+ 
+        height: 350px;
+         width: 350px;
+         position:absolute;
+         left: 1260px;
+         top: 280px;
+         display: flex; 
+      }
+      .txtCar1{
+        position:absolute;
+        left: 1395px;
+        top: 350px;
+      }
+      .map{
+    position: absolute;
+    left: 1350px;
+    top: 600px;
+      }

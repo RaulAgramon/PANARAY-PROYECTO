@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>PANARAY</title>
+	<link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+	
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1><img src="img/logo1.png" width="100px" height="100px"></h1>
+			</div>
+			
+				<nav class="carr">
+				<a href="Carrito.html" ><img src="img/carrito.png" width="45px" height="45px"></img></a>
+			</nav>
+		</div>
+	</header>
+	<div class="capa"></div>
+<!--	--------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="Index.html">Inicio</a>
+			<a href="iniciarsesion.html">Iniciar sesion</a>
+			<a href="Ventas.html">Ventas</a>
+			<a href="Contactanos.html">Contactanos</a>
+	
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+<p class="Tit">PANARAY</p>
+<br>
+<hr>
+<form method="POST">
+	<div id="login-box">
+		<h1>Inicio de sesion</h1> <!-- El título de Inicio de sesión -->
+
+		<div class="form">
+			<div class="item"> <!-- parte de nombre de usuario -->
+				
+				<input type="text" required title="Escriba su nombre de usuario" placeholder="Usuario" name="username" /> <!-- Entrada de nombre de usuario realizada por cuadro de texto -->
+			</div>
+
+			<div class="item"> <!-- parte de la contraseña -->
+			
+				<input type="password" placeholder="Contraseña" name="password"  required title="Escriba su contraseña"/> <!-- Entrada de contraseña usando el cuadro de texto de contraseña -->
+			</div>
+
+		</div>
+		
+		<button type="reset">Iniciar sesion</button> <!-- Botón de inicio de sesión implementado con el botón -->
+	</div>
+</form>
+</body>
+</html>
